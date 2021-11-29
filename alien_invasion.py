@@ -1,5 +1,5 @@
 import sys
-
+import os.path
 import pygame
 
 from settings import Settings
@@ -25,6 +25,8 @@ def run_game():
     #Название окна
     pygame.display.set_caption("Alien invasion")
     #Создание класов для статистики
+    
+    if (not os.path.exists(filename)): open(filename, "w+").write('0')
     stats = GameStats(ai_settings, filename)
     sb = Scoreboard(ai_settings, screen, stats)
     #Создание корабля, группы пуль ипришельцев
