@@ -9,7 +9,7 @@ class Ship(Sprite):
         self.screen = screen
         self.ai_settings = ai_settings
         #Загружает изображение корабля
-        self.image = pygame.image.load('images\ship.bmp')
+        self.image = pygame.image.load('src/images/ship.bmp')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
         #Каждый новый корабль появляется у нижнего края

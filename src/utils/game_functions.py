@@ -3,8 +3,8 @@ import sys
 import pygame
 from time import sleep
 
-from bullet import Bullet
-from alien import Alien
+from src.models.bullet import Bullet
+from src.models.alien import Alien
 import json
 
 def fire_bullet(ai_settings, bullets,ship,screen):

@@ -8,7 +8,7 @@ class Alien(Sprite):
         self.ai_settings = ai_settings
         self.screen = screen
         #Выводим пришельца на экран и присваиваем атрибут rect
-        self.image = pygame.image.load('images/aliens.bmp')
+        self.image = pygame.image.load('src/images/aliens.bmp')
         self.rect = self.image.get_rect()
         #Задаём нужные координаты
         self.rect.x = self.rect.width

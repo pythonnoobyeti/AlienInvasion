@@ -3,12 +3,12 @@ import sys
 import pygame
 
 from settings import Settings
-from ship import Ship
-import game_functions as gf
+from src.models.ship import Ship
+import src.utils.game_functions as gf
 from pygame.sprite import Group
-from game_stats import GameStats
-from button import Button
-from scoreboard import Scoreboard
+from src.models.game_stats import GameStats
+from src.models.button import Button
+from src.models.scoreboard import Scoreboard
 import json
 
 filename = 'score.json'

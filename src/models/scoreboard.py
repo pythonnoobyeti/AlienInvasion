@@ -1,6 +1,6 @@
 import pygame.font
 from pygame.sprite import Group
-from ship import Ship
+from src.models.ship import Ship
 
 class Scoreboard():
     '''Класс для вывода игровой информации'''
